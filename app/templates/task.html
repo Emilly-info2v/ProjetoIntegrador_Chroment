@@ -1,0 +1,27 @@
+{% extends  'base.html' %}
+
+{% block content %}
+{% include 'components/header.html' %}
+<main class="container py-3">
+  <div class="row justify-content-center">
+    <div class="col-6 border rounded p-3">
+      <h1>
+        {{ task.title }}
+      </h1>
+      <hr>
+      <p>
+        <span class="fw-bold">Descrição:</span>
+        {{ task.description }}
+      </p>
+      <div class="d-flex justify-content-end gap-3 pt-5"> 
+        <a class="btn btn-danger" href="{{ url_for('delete_task', id=task.id) }}">
+          Excluir tarefa
+        </a>
+        <a class="btn btn-primary" href="{{ url_for('edit_task', id=task.id) }}">
+          Editar tarefa
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

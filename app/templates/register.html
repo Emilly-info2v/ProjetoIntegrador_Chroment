@@ -1,0 +1,47 @@
+{% extends  'base.html' %}
+
+{% block content %}
+<main class="container">
+  <div class="row justify-content-end border rounded">
+    <div class="col-6 bg-blue-1 d-flex justify-content-center align-items-center">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='img/logo-2.png') }}" alt="">
+      </a>
+    </div>
+    <div class="col-6">
+      <form action="{{ url_for('register') }}" method="post" class="d-flex flex-column p-5 gap-3">
+        {{ form.csrf_token }}
+
+        <h1>Crie sua conta</h1>
+
+        {% include 'components/flash.html' %}
+
+        <div>
+          <label for="" class="form-label">Nome</label>
+          {{ form.name(class='form-control') }}
+        </div>
+
+        <div>
+          <label for="" class="form-label">E-mail</label>
+          {{ form.email(class='form-control') }}
+        </div>
+        
+        <div>
+          <label for="" class="form-label">Senha</label>
+          {{ form.password(class='form-control') }}
+        </div>
+
+        <div>
+          {{ form.submit(class='btn btn-primary') }}
+        </div>
+
+        <div>
+          <p>
+            Já é um inscrito? <a href="{{ url_for('login') }}">Entre aqui</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

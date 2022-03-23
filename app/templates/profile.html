@@ -1,0 +1,41 @@
+{% extends  'base.html' %}
+
+{% block content %}
+{% include 'components/header.html' %}
+<main class="container">
+  <div class="row justify-content-end">
+    <div class="col-6 bg-blue-1 d-flex justify-content-center align-items-center p-5">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='img/logo-2.png') }}" alt="">
+      </a>
+    </div>
+    <div class="col-6">
+      <form class="d-flex flex-column p-5 gap-3">
+        {{ form.csrf_token }}
+
+        <h1>Visão geral do perfil</h1>
+
+        {% include 'components/flash.html' %}
+
+        <div>
+          <label for="" class="form-label">Usuário: </label>
+          {{ user.name }}
+        </div>
+        
+        <div>
+          <label for="" class="form-label">Email: </label>
+          {{ user.email }}
+        </div>
+
+        <div>
+          <a href="{{ url_for('delete_profile') }}" class="btn btn-danger">Deletar perfil</a>
+          <a href="{{ url_for('edit_profile') }}" class="btn btn-primary">
+            Editar perfil
+          </a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

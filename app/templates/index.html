@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'components/header-index.html' %}
+<main>
+  <section class="section-1 mb-5"> 
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class="title-1">
+            <h2 class="fw-bold text-light text-center">Chroment</h2>
+            <h3 class="fw-light text-light text-center">Projeto Integrador  </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2 pt-5 pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 ">
+          <div class="title-2">
+            <div class="our-project">
+              <h2 class="fw-bold fs-1 text-center pb-5">
+                CONHEÇA O NOSSO PROJETO
+              </h2>
+
+              <p class="fs-4">O projeto consiste na criação de um site que funcionará como uma espécie de agenda, organizando os horários de estudos dos alunos do IFZN. Durante o semestre o site identificará a disponibilidade de disciplinas e criará um sistema automático de estudos, tendo como referência essa disponibilidade, o turno de aula do estudante, os horários vagos e, principalmente, quantas horas/dia o usuário pretende estudar. 
+              </p>
+
+              <p class="fs-4">
+                A princípio, a ideia é que o site/agenda seja acessado via senha do SUAP. Outros pontos de destaque serão a interatividade e a acessibilidade, para que possamos, de forma inclusiva, atingir uma maior diversidade de estudantes. No primeiro momento o nosso público alvo são os alunos do campus do IFZN. Não descartamos a possibilidade de abrir para o IFRN ou até mesmo para o público em geral. 
+
+              </p>
+            </div>
+
+            <div class="our-motivation pt-5">
+              <h2 class="fw-bold fs-1 text-center pb-5">NOSSA MOTIVAÇÃO</h2>
+              <p class="fs-4">A gestão do tempo é tão importante pois ela permite clareza nas escolhas e possibilita dedicar melhor o seu tempo aos estudos. Também ser mais produtivo e ter maior foco e concentração. Tudo isso para que, ao final do dia, você possa sentir aquele sentimento de dever cumprido.              </p>
+              <p class="fs-4">Hoje em dia temos que lidar com vários compromissos ao mesmo tempo, então nada melhor que nos organizar de forma dinâmica e interativa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3 pt-5 pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <h2 class="fw-bold text-light fs-1 text-center">QUEM SOMOS?</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <div class="pic mt-5">
+            <img class="img-fluid ps-5" src="../static/img/adriel.png" alt="">
+            <label for="" class="d-block  fs-3 text-light p-0 m-0 text-center"><strong>Adriel</strong> <br> Santos</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="pic mt-5">
+            <img class="img-fluid ps-5" src="../static/img/emily.png" alt="">
+            <label for="" class="d-block  fs-3 text-light p-0 m-0 text-center"><strong>Emily</strong> <br> Natacha</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="pic mt-5">
+            <img class="img-fluid ps-5" src="../static/img/leo.png" alt="">
+            <label for="" class="d-block  fs-3 text-light p-0 m-0 text-center"><strong>Leonardo</strong> <br> Barros</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-around teacher">
+        <div class="col-3">
+          <img class="img-fluid ps-5" src="../static/img/marjorie.png" alt="">
+            <label for="" class="d-block  fs-3 text-light p-0 m-0 text-center"><strong>Marjorie</strong> <br> Ramos</label>
+            <label for="" class="d-block  fs-4 fw-light  p-0 m-0 text-center teacher-1">(Orientadora)</label>
+        </div>
+        <div class="col-3">
+          <img class="img-fluid ps-5" src="../static/img/sarah.png" alt="">
+            <label for="" class="d-block  fs-3 text-light p-0 m-0 text-center"><strong>Sarah</strong> <br> Silva</label>
+            <label for="" class="d-block  fs-4 fw-light  p-0 m-0 text-center teacher-1 ">(Orientadora)</label>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="p-5 bg-primary"></footer>
+
+
+{% endblock %}

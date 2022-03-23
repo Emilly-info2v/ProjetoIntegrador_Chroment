@@ -1,0 +1,66 @@
+.bg-blue-1 {
+    background-color: #219EBC;
+}
+
+.bg-blue-2 {
+    background-color: #023047;
+}
+
+.text-blue-1 {
+    color: #219EBC;
+}
+
+.btn-primary {
+    background-color: #219EBC;
+    border: 1px solid #219EBC;
+}
+
+.btn-primary:hover {
+    background-color: #1587a3;
+    border: 1px solid #219EBC;
+}
+
+body{
+    .section-1{
+        height: 759px;
+        background-image: url(../img/bg-main1.png);
+        background-repeat: no-repeat;
+        margin:auto;
+        justify-content: center;
+
+        .title-1{
+            margin-top:50%;
+            h2{
+                font-size: 6rem;
+            }
+            h3{
+                font-size:2rem;
+            }
+        }
+
+        
+    }
+
+    .section-2{
+        .title-2{
+            .our-project{
+                h2{
+                    color:#023047;
+                }
+            }
+
+            .our-motivation{
+                h2{
+                    color:#023047;
+                }
+            }
+        }
+    }
+
+    .section-3{
+        background: linear-gradient(131.08deg, #023047 0%, rgba(2, 48, 71, 0.75) 66.94%);
+        .teacher{
+                color:#219EBC;    
+        }
+    }
+}

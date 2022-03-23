@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blue-1">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="{{ url_for('register') }}">Inscrever-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="{{ url_for('login') }}">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
